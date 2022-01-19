@@ -176,7 +176,18 @@ input:focus ,textarea:focus{
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
+.submit-button{
+    background-color: #fff;
+    border:1px solid var(--primary);
+    padding: 10px 25px;
+    color: var(--primary);
+    transition: 0.3s ease;
+}
+.submit-button:hover{
+    background-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
 /*  ========= Footer ==============*/
 footer{
     position: fixed;
