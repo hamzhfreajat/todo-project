@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Rubik:wght@400;500;600;700&display=swap');:root{
+    --primary:#E60965;
+    --secondary:#F94892;
+    --third:#FFA1C9;
+    --four:#FBE5E5;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family:"Rubik";
+    display: grid;
+    grid-template-rows:65px 1fr 65px ;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+d-flex{
+    display: flex;
+}
+
+.container{
+    max-width:1400px;
+    margin: 0 auto;
+}
+.active a{
+    color: #fff;
+}
+/* ========== Header =========*/
+header{
+    background-color: var(--primary);
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+header .container{
+    height: 100%;
+}
+.shadow{
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+.top-header{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.logo h5{
+    font-family: 'Neonderthaw';
+    color: #fff;
+    font-size: 45px;
+    margin: 0;
+}
+.header-logo{
+    flex-grow: 2;
+    display: flex;
+}
+.header-nav{
+    flex-grow: 4;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    margin: 0px 20px;
+}
+.nav-link{
+    text-decoration: none;
+    color: #FFA1C9;
+    margin: 0px  5px;
+}
+
+/*========= Main ==========*/
+.main-content{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+#user-info-section{
+    background-color: var(--four);
+    flex-grow:4;
+    padding: 0px 10px 100px 10px;
+}
+.sidebar{
+    height: 100%;
+}
+.sidebar-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+#user-task-section{
+    flex-grow: 8;
+}
+.user-info-avatar img{
+    border-radius: 50%;
+    width: 150px;
+}
+.sidebar-title h5{
+    font-weight: 600;
+    font-size: 22px;
+}
+.user-course{
+    text-align: left !important;
+}
+.user-bottom-info{
+    margin: 0px 10px;
+    text-align: center;
+}
+.user-bottom-info p{
+    line-height: 1.2;
+}
+.user-course-details div{
+    margin-left: 10px;
+}
+
+#user-task-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#user-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#user-table td, #user-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#user-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#user-table tr:hover {background-color: #ddd;}
+
+#user-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--secondary);
+    color: white;
+}
+
+/*  ========= Footer ==============*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary) ;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-socail-media ul{
+    display: flex
+}
+.footer-copyright{
+    color: #fff;
+}
+.footer-socail-media a{
+    margin: 0px 5px;
+    transition: 0.3s ease;
+}
+.footer-socail-media i:hover{
+    color: #FFA1C9;
+}
+.footer-socail-media i{
+    color: #fff;
+    font-size: 24px;
+}

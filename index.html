@@ -6,73 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo Project | Home</title>
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="https://allyoucan.cloud/cdn/icofont/1.0.1/icofont.css">
+
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h5>Todo Project</h5>
-            <img src="./assets/logo.png" alt="logo-image" width="200">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="user-info-section">
-            <div class="user-info"></div>
-            <div class="user-course"></div>
-        </section>
-        <section id="user-task-section">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Task</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>1</th>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th>2</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th>3</th>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-        </section>
-    </main>
-    <footer>
-        <div id="footer-logo">
-            <div class="logo">
-                <h5>Todo Project</h5>
-                <img src="#" alt="logo-image">
+    <header class="main-header shadow">
+        <div class="container">
+            <div class="top-header">
+                <div class="logo header-logo">
+                    <h5>Todo</h5>
+                </div>
+                <nav class="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./about.html" class="nav-link">About Us</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <div class="footer-copyright">
-            &copy; 2022 By Hamza Fraijat
+    </header>
+    <main>
+        <div class="main-content">
+            <section id="user-info-section" class="sidebar">
+                <div class="user-info sidebar-section">
+                   <div class="user-top-info">
+                       <div class="user-info-title sidebar-title">
+                           <h5>User Information</h5>
+                       </div>
+                       <div class="user-info-details">
+                           <div class="user-info-avatar">
+                               <img src="./assets/avatar.png" alt="user-avatar-image">
+                           </div>
+                           <div class="user-info-name">
+                               <p>User Name</p>
+                           </div>
+                       </div>
+                   </div>
+                    <div class="user-bottom-info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, suscipit.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-course sidebar-section">
+                    <div class="user-course-title sidebar-title">
+                        <h5>Course Information</h5>
+                    </div>
+                    <div class="user-course-details">
+                        <div class="user-course-name">
+                            <p><strong>Course Name :</strong> Java Programming</p>
+                        </div>
+                        <div class="user-course-number">
+                            <p><strong>Course Level :</strong> Bigginers</p>
+                        </div>
+                        <div class="user-course-number">
+                            <p><strong>Course Number :</strong> 101</p>
+                        </div>
+                        <div class="user-course-description">
+                            <p><strong>Course Description :</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci dicta eius eligendi ipsum quam?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="user-task-section">
+                <table id="user-table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Task</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
         </div>
-        <div class="footer-socail-media">
-            <ul>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Youtube</a></li>
-            </ul>
-        </div>
+    </main>
+    <footer class="shadow">
+       <div class="container">
+           <div id="footer-logo">
+               <div class="logo">
+                   <h5>Todo</h5>
+               </div>
+           </div>
+           <div class="footer-copyright">
+               &copy; 2022 By Hamza Fraijat
+           </div>
+           <div class="footer-socail-media">
+               <ul>
+                   <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                   <li><a href=""><i class="icofont-instagram"></i></a></li>
+                   <li><a href=""><i class="icofont-twitter"></i></a></li>
+                   <li><a href=""><i class="icofont-youtube"></i></a></li>
+               </ul>
+           </div>
+       </div>
     </footer>
 </body>
 </html>
